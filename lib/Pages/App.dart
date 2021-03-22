@@ -22,6 +22,8 @@ class _AppState extends State<App> {
         children: [HomePage(), SearchPage()],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: index,
         onTap: (int index) {
           setState(() {

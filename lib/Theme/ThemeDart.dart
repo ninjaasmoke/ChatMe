@@ -29,22 +29,20 @@ ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   backgroundColor: Color(0xff181818),
   textTheme: TextTheme(
+      bodyText1: TextStyle(
+        color: Colors.white,
+      ),
       headline6: TextStyle(
           fontFamily: 'DMSans',
           color: Color(0xfff0f0f0),
           fontSize: 24,
           fontWeight: FontWeight.w700)),
+  iconTheme: IconThemeData(color: Colors.white),
   scaffoldBackgroundColor: Color(0xff121212),
   appBarTheme: AppBarTheme(
     elevation: 0,
     backgroundColor: Color(0xff181818),
   ),
-  cupertinoOverrideTheme: NoDefaultCupertinoThemeData(
-      brightness: Brightness.dark,
-      barBackgroundColor: Color(0xff181818),
-      textTheme: CupertinoTextThemeData(
-          primaryColor: Colors.grey[400],
-          textStyle: TextStyle(fontFamily: 'DMSans'))),
   bottomNavigationBarTheme:
       BottomNavigationBarThemeData(backgroundColor: Color(0xff181818)),
 );
