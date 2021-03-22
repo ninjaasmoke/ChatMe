@@ -8,17 +8,16 @@ TextStyle titleTextStyle = TextStyle(
 
 ThemeData lightTheme = ThemeData(
   primaryColor: Color(0xfff0a010),
+  primarySwatch: Colors.orange,
   fontFamily: 'DMSans',
   brightness: Brightness.light,
   backgroundColor: Colors.white,
-  bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: Color(0xfff0f0f0), elevation: 0),
   appBarTheme: AppBarTheme(
     backgroundColor: Color(0xfff0f0f0),
     textTheme: TextTheme(
         headline6: TextStyle(
             fontFamily: 'DMSans',
-            color: Colors.black,
+            color: Color(0xfff0a010),
             fontSize: 24,
             fontWeight: FontWeight.w700)),
     elevation: 0,
