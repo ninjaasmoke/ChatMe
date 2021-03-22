@@ -35,12 +35,13 @@ class _ProfilePageState extends State<ProfilePage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(20, 20, 8, 24),
+                  margin: EdgeInsets.fromLTRB(20, 20, 8, 32),
                   decoration: BoxDecoration(
                       color: Colors.grey[400],
                       borderRadius: BorderRadius.circular(100)),
                   padding: EdgeInsets.all(8),
                   child: Icon(
+                    //TODO: replace with image
                     Icons.person,
                     color: Colors.black,
                     size: 100,
@@ -53,8 +54,9 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      //TODO: replace with real data
                       Text(
-                        "Username",
+                        "ninjaasmoke",
                         style: Theme.of(context).textTheme.headline4,
                       ),
                       SizedBox(
@@ -64,6 +66,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         "917892536762",
                         style: Theme.of(context).textTheme.bodyText1,
                       ),
+                      SizedBox(height: 20),
                     ],
                   ),
                 )

@@ -49,6 +49,7 @@ class _SearchHereState extends State<SearchHere> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         body: Column(
           children: [
             Container(
@@ -67,6 +68,12 @@ class _SearchHereState extends State<SearchHere> {
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
+            ),
+            Divider(
+              // color: Theme.of(context).backgroundColor,
+              color: Colors.white,
+              height: 8,
+              thickness: .1,
             )
           ],
         ),

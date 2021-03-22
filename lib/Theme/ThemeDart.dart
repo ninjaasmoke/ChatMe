@@ -34,7 +34,7 @@ ThemeData darkTheme = ThemeData(
       bodyText1: TextStyle(
         color: Colors.white,
       ),
-      bodyText2: TextStyle(color: Colors.grey),
+      bodyText2: TextStyle(color: Colors.grey[600]),
       subtitle2: TextStyle(color: Colors.grey, fontSize: 12),
       headline4: TextStyle(
           color: Colors.grey[100], fontSize: 24, fontWeight: FontWeight.w700),
