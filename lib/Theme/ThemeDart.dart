@@ -20,12 +20,7 @@ ThemeData lightTheme = ThemeData(
   pageTransitionsTheme: pageTransitionsTheme,
   appBarTheme: AppBarTheme(
     backgroundColor: Color(0xfff0f0f0),
-    textTheme: TextTheme(
-        headline6: TextStyle(
-            fontFamily: 'DMSans',
-            color: Color(0xfff0a010),
-            fontSize: 24,
-            fontWeight: FontWeight.w700)),
+    textTheme: TextTheme(headline6: TextStyle(color: Color(0xfff0a010))),
     elevation: 0,
   ),
 );
@@ -33,7 +28,7 @@ ThemeData lightTheme = ThemeData(
 ThemeData darkTheme = ThemeData(
   fontFamily: 'DMSans',
   brightness: Brightness.dark,
-  backgroundColor: Color(0xff181818),
+  backgroundColor: Color(0xff121212),
   pageTransitionsTheme: pageTransitionsTheme,
   textTheme: TextTheme(
       bodyText1: TextStyle(
@@ -41,17 +36,19 @@ ThemeData darkTheme = ThemeData(
       ),
       bodyText2: TextStyle(color: Colors.grey),
       subtitle2: TextStyle(color: Colors.grey, fontSize: 12),
+      headline4: TextStyle(
+          color: Colors.grey[100], fontSize: 24, fontWeight: FontWeight.w700),
       headline6: TextStyle(
           fontFamily: 'DMSans',
           color: Color(0xfff0f0f0),
           fontSize: 24,
           fontWeight: FontWeight.w700)),
   iconTheme: IconThemeData(color: Colors.white),
-  scaffoldBackgroundColor: Color(0xff121212),
+  scaffoldBackgroundColor: Color(0xff080808),
   appBarTheme: AppBarTheme(
     elevation: 0,
-    backgroundColor: Color(0xff181818),
+    backgroundColor: Color(0xff121212),
   ),
   bottomNavigationBarTheme:
-      BottomNavigationBarThemeData(backgroundColor: Color(0xff181818)),
+      BottomNavigationBarThemeData(backgroundColor: Color(0xff121212)),
 );
