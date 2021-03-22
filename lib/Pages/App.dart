@@ -1,5 +1,6 @@
 import 'package:chatme/Pages/HomePage.dart';
 import 'package:chatme/Pages/SearchPage.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -16,16 +17,9 @@ class _AppState extends State<App> {
 //        title: Text("ChatMe"),
 //      ),
 //      body: index == 0 ? HomePage() : SearchPage(),
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            expandedHeight: 100.0,
-            title: Text("ChatMe"),
-          ),
-          SliverFillRemaining(
-            child: index == 0 ? HomePage() : SearchPage(),
-          ),
-        ],
+      body: IndexedStack(
+        index: index,
+        children: [HomePage(), SearchPage()],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,

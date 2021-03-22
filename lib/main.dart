@@ -1,5 +1,4 @@
 import 'package:chatme/Pages/App.dart';
-import 'package:chatme/Pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
 import 'Theme/ThemeDart.dart';
