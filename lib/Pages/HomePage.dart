@@ -1,4 +1,5 @@
 import 'package:animations/animations.dart';
+import 'package:chatme/Pages/SettingsPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,10 @@ class _HomePageState extends State<HomePage> {
                   CupertinoIcons.gear,
                   size: 20,
                 ),
-                onPressed: () {})
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SettingsPage()));
+                })
           ],
         ),
         body: ListView.builder(

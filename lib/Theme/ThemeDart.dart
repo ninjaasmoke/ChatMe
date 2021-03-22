@@ -6,12 +6,18 @@ TextStyle titleTextStyle = TextStyle(
   letterSpacing: 0.1,
 );
 
+PageTransitionsTheme pageTransitionsTheme = PageTransitionsTheme(builders: {
+  TargetPlatform.android: ZoomPageTransitionsBuilder(),
+  TargetPlatform.iOS: ZoomPageTransitionsBuilder()
+});
+
 ThemeData lightTheme = ThemeData(
   primaryColor: Color(0xfff0a010),
   primarySwatch: Colors.orange,
   fontFamily: 'DMSans',
   brightness: Brightness.light,
   backgroundColor: Colors.white,
+  pageTransitionsTheme: pageTransitionsTheme,
   appBarTheme: AppBarTheme(
     backgroundColor: Color(0xfff0f0f0),
     textTheme: TextTheme(
@@ -28,6 +34,7 @@ ThemeData darkTheme = ThemeData(
   fontFamily: 'DMSans',
   brightness: Brightness.dark,
   backgroundColor: Color(0xff181818),
+  pageTransitionsTheme: pageTransitionsTheme,
   textTheme: TextTheme(
       bodyText1: TextStyle(
         color: Colors.white,
