@@ -27,7 +27,7 @@ class _SearchPageState extends State<SearchPage> {
                 return ListTile(
                   trailing: Icon(Icons.search, color: Color(0xff808080)),
                   title: Text("Type something here",
-                      style: TextStyle(fontSize: 12)),
+                      style: Theme.of(context).textTheme.subtitle2),
                 );
               },
               openBuilder: (context, openBuilder) {
@@ -52,14 +52,15 @@ class _SearchHereState extends State<SearchHere> {
         body: Column(
           children: [
             Container(
-              // color: Color(0xff181818),
+              color: Theme.of(context).appBarTheme.backgroundColor,
               child: TextField(
                 cursorColor: Theme.of(context).accentColor,
                 textCapitalization: TextCapitalization.words,
                 autofocus: true,
                 decoration: InputDecoration(
                   prefixIcon: IconButton(
-                      icon: Icon(Icons.arrow_back),
+                      icon: Icon(Icons.arrow_back,
+                          color: Theme.of(context).textTheme.bodyText1.color),
                       onPressed: () {
                         Navigator.pop(context);
                       }),

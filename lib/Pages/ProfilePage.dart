@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'SettingsPage.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -11,6 +14,17 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Profile"),
+        actions: [
+          IconButton(
+              icon: Icon(
+                CupertinoIcons.gear,
+                size: 20,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SettingsPage()));
+              })
+        ],
       ),
     );
   }
