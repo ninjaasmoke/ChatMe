@@ -30,6 +30,7 @@ ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   backgroundColor: Color(0xff121212),
   pageTransitionsTheme: pageTransitionsTheme,
+  cardColor: Colors.grey[900],
   textTheme: TextTheme(
       bodyText1: TextStyle(
         color: Colors.white,
@@ -41,8 +42,8 @@ ThemeData darkTheme = ThemeData(
       headline6: TextStyle(
           fontFamily: 'DMSans',
           color: Color(0xfff0f0f0),
-          fontSize: 24,
-          fontWeight: FontWeight.w700)),
+          fontSize: 16,
+          fontWeight: FontWeight.w500)),
   iconTheme: IconThemeData(color: Colors.white),
   scaffoldBackgroundColor: Color(0xff080808),
   appBarTheme: AppBarTheme(

@@ -32,6 +32,8 @@ class _AppState extends State<App> {
           });
         },
         items: [
+          // BottomNavigationBarItem(
+          //     icon: Icon(Icons.mode_comment_outlined), label: 'Chats'),
           BottomNavigationBarItem(
               icon: Icon(Icons.chat_bubble_outline), label: 'Chats'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
