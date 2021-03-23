@@ -45,28 +45,37 @@ ThemeData lightTheme = ThemeData(
 
 ThemeData darkTheme = ThemeData(
   fontFamily: 'DMSans',
+  accentColor: Color(0xff1db954),
   brightness: Brightness.dark,
   backgroundColor: Color(0xff121212),
   pageTransitionsTheme: pageTransitionsTheme,
   cardColor: Colors.grey[900],
   textTheme: TextTheme(
-      bodyText1: TextStyle(
-        color: Colors.white,
-      ),
-      bodyText2: TextStyle(color: Colors.grey[600]),
-      subtitle2: TextStyle(color: Colors.grey, fontSize: 12),
-      headline4: TextStyle(
-          color: Colors.grey[100], fontSize: 24, fontWeight: FontWeight.w700),
-      headline5: TextStyle(
-          color: Color(0xfff8f8f8), fontSize: 16, fontWeight: FontWeight.w500),
-      headline6: TextStyle(
-          color: Color(0xffe0e0e0), fontSize: 8, fontWeight: FontWeight.w500)),
+    bodyText1: TextStyle(
+      color: Colors.white,
+    ),
+    bodyText2: TextStyle(color: Colors.grey[600]),
+    subtitle1: TextStyle(color: Color(0xff1db954), fontWeight: FontWeight.bold),
+    subtitle2: TextStyle(color: Colors.grey, fontSize: 12),
+    headline3: TextStyle(
+        color: Colors.grey[100], fontSize: 32, fontWeight: FontWeight.w900),
+    headline4: TextStyle(
+        color: Colors.grey[100], fontSize: 24, fontWeight: FontWeight.w700),
+    headline5: TextStyle(
+        color: Color(0xfff8f8f8), fontSize: 16, fontWeight: FontWeight.w500),
+    headline6: TextStyle(
+        color: Color(0xffe0e0e0), fontSize: 8, fontWeight: FontWeight.w500),
+  ),
   iconTheme: IconThemeData(color: Colors.white),
   scaffoldBackgroundColor: Color(0xff080808),
   appBarTheme: AppBarTheme(
     elevation: 0,
     backgroundColor: Color(0xff121212),
   ),
+  textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+          // backgroundColor: Color(0xff181818),
+          )),
   bottomNavigationBarTheme:
       BottomNavigationBarThemeData(backgroundColor: Color(0xff121212)),
 );
