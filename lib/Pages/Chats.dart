@@ -27,7 +27,11 @@ class _ChatsPageState extends State<ChatsPage> {
           overScroll.disallowGlow();
           return true;
         },
-        child: Padding(
+        child: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/Dark/doodle-1.jpg'),
+                  fit: BoxFit.cover)),
           padding: EdgeInsets.only(bottom: 0),
           child: Column(
             children: [

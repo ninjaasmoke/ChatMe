@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Chats"),
+          actions: [IconButton(icon: Icon(Icons.more_vert), onPressed: () {})],
         ),
         body: ListView.separated(
           shrinkWrap: true,
