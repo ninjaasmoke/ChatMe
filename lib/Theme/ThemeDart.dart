@@ -57,8 +57,10 @@ ThemeData darkTheme = ThemeData(
       subtitle2: TextStyle(color: Colors.grey, fontSize: 12),
       headline4: TextStyle(
           color: Colors.grey[100], fontSize: 24, fontWeight: FontWeight.w700),
+      headline5: TextStyle(
+          color: Color(0xfff8f8f8), fontSize: 16, fontWeight: FontWeight.w500),
       headline6: TextStyle(
-          color: Color(0xfff8f8f8), fontSize: 16, fontWeight: FontWeight.w500)),
+          color: Color(0xffe0e0e0), fontSize: 8, fontWeight: FontWeight.w500)),
   iconTheme: IconThemeData(color: Colors.white),
   scaffoldBackgroundColor: Color(0xff080808),
   appBarTheme: AppBarTheme(

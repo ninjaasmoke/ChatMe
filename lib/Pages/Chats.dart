@@ -78,9 +78,17 @@ class _ChatsPageState extends State<ChatsPage> {
           padding: EdgeInsets.symmetric(vertical: 6, horizontal: 12),
           child: Text(
             message,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline5,
           ),
         ),
+        // Column(
+        //   children: [
+        //     Text(
+        //       "10:49 PM",
+        //       style: Theme.of(context).textTheme.headline6,
+        //     )
+        //   ],
+        // )
       ],
     );
   }
